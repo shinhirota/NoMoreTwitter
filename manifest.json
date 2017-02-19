@@ -1,0 +1,15 @@
+{
+  "name": "No more twitter",
+  "description": "This extension hides all tweets from your twitter.",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": [
+        "jquery-3.1.1.min.js",
+        "nmt.js"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
